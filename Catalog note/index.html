@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <h1 class="gradeBook">Catalog note</h1>
+
+            <form id="studentForm">
+                <input type="text" id="addStudent" placeholder="Adauga student">
+                <input type="submit" value="Adauga">
+            </form>
+
+            <br><br>
+            <button id="sortAsc" class="btn">Sortare crescatoare</button>
+            <button id="sortDesc" class="btn">Sortare descrescatoare</button><br><br><br>
+
+            <table class="center" border="2">
+                <tr>
+                    <th>Nume</th>
+                    <th>Medie</th>
+                    <th>Note student</th>
+                    <th style="width: 100px;">Sterge student</th>
+                </tr>
+                <tbody id="studentTable"></tbody>
+            </table>
+
+        </div>
+
+
+
+
+        <div id="studentDetailsContainer" class="hiddenStuff hidden" style="margin-top: 35px;">
+            <button onClick="hideSudentDetailsContainer()">Ascunde notele</button><br><br>
+            <p>Note student: <span id="studentName">Alex</span></p>
+            <br><br><br><br>
+
+            <form id="addGrade">
+                <input type="text" id="grade" placeholder="Introduceti nota">
+                <input type="submit" value="Introduceti nota studentului">
+            </form>
+
+
+            <br><br><br>
+            <button id="gradeAsc">Sortare crescatoare</button>
+            <button id="gradeDesc">Sortare descrescatoare</button>
+            <br><br><br>
+            <table class="center" border="2">
+                <tr>
+                    <td>Note</td>
+                    <td>X</td>
+                </tr>
+                <tbody id="gradesTable">
+
+                </tbody>
+            </table>
+            
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
